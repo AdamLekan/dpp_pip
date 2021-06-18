@@ -2,14 +2,15 @@ import requests
 
 
 
-def getCountries():
+def getCountries(key, link):
     url = "https://wft-geo-db.p.rapidapi.com/v1/geo/countries"
 
     headers = {
-        'x-rapidapi-key': "0d8358d49fmshe586bac4d4ffeb4p16e546jsn456dbfd1b477",
-        'x-rapidapi-host': "wft-geo-db.p.rapidapi.com"
+        'x-rapidapi-key': key,
+        'x-rapidapi-host': link
     }
 
     response = requests.request("GET", url, headers=headers)
 
-    print(response.text)
+    return response.text
+
