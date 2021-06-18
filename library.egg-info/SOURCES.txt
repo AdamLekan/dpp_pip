@@ -1,0 +1,9 @@
+setup.py
+library.egg-info/PKG-INFO
+library.egg-info/SOURCES.txt
+library.egg-info/dependency_links.txt
+library.egg-info/top_level.txt
+package1/__init__.py
+package1/getCities.py
+package2/__init__.py
+package2/getCountry.py
